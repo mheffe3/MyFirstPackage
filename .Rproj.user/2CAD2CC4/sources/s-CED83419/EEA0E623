@@ -1,24 +1,24 @@
 {
-    "id": "7FB97C75",
-    "path": "~/MyFirstPackage/.Rbuildignore",
-    "project_path": ".Rbuildignore",
-    "type": "text",
-    "hash": "2708567950",
+    "id": "EEA0E623",
+    "path": "~/Internship2021/RCode/script1.R",
+    "project_path": null,
+    "type": "r_source",
+    "hash": "0",
     "contents": "",
     "dirty": false,
-    "created": 1625250843967.0,
+    "created": 1625581063410.0,
     "source_on_save": false,
-    "relative_order": 3,
+    "relative_order": 2,
     "properties": {
         "source_window_id": "",
         "Source": "Source"
     },
     "folds": "",
-    "lastKnownWriteTime": 1625247754,
+    "lastKnownWriteTime": 1625260334,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1625247754,
+    "last_content_update": 1625260334,
     "read_only": false,
     "read_only_alternatives": []
 }

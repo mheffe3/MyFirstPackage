@@ -1,14 +1,14 @@
 {
-    "id": "D69DA71E",
+    "id": "C176204A",
     "path": "~/MyFirstPackage/man/fibonacci.Rd",
     "project_path": "man/fibonacci.Rd",
     "type": "r_doc",
-    "hash": "3083164124",
+    "hash": "0",
     "contents": "",
     "dirty": false,
-    "created": 1625248018502.0,
+    "created": 1625581442479.0,
     "source_on_save": false,
-    "relative_order": 1,
+    "relative_order": 3,
     "properties": {
         "tempName": "Untitled1",
         "source_window_id": "",
@@ -21,7 +21,7 @@
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1625249191337,
+    "last_content_update": 1625249191,
     "read_only": false,
     "read_only_alternatives": []
 }
