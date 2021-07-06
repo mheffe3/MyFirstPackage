@@ -1,25 +1,26 @@
-\name{fibonacci}
-\alias{fibonacci}
+\name{MatrixMultiplication}
+\alias{MatrixMultiplication}
 %- Also NEED an '\alias' for EACH other topic documented here.
-\title{fibonacci
+\title{MatrixMultiplication
 %%  ~~function to do ... ~~
 }
-\description{Takes in an integer and prints out that number of terms of the fibonacci sequence specified by that number
+\description{Multiplies two inputted matrices and prints the product
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }
 \usage{
-fibonacci(numTerms)
+MatrixMultiplication(a,b)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
-  \item{numTerms}{Number of Terms of Sequence to be Printed
+  \item{a}{first matrix}
+  \item{b}{second matrix}
 %%     ~~Describe \code{x} here~~
-}
+
 }
 \details{
 %%  ~~ If necessary, more details than the description above ~~
 }
-\value{Return type is void just prints out the number of terms of the sequence specified
+\value{Return type is void just prints out the product
 %%  ~Describe the value returned
 %%  If it is a LIST, use
 %%  \item{comp1 }{Description of 'comp1'}
@@ -41,33 +42,20 @@ fibonacci(numTerms)
 \seealso{
 %% ~~objects to See Also as \code{\link{help}}, ~~~
 }
-\examples{fibonacci(8)
-[1] 0
-[1] 1
-[1] 1
-[1] 2
-[1] 3
-[1] 5
-[1] 8
-[1] 13
+\examples{MatrixMultiplier(M1 <- matrix(c(1,2,3,4), nrow = 2, byrow = TRUE),
+M2 <- matrix(c(1,2,3,4), nrow = 2, byrow = TRUE))
+    [,1] [,2]
+[1,]  1    4
+[2,]  9   16
 ##---- Should be DIRECTLY executable !! ----
 ##-- ==>  Define data, use random,
 ##--	or do  help(data=index)  for the standard data sets.
 
 ## The function is currently defined as
-fibonacci(numTerms)
+MatrixMultiplication(a,b)
 {
-  count = 0
-  a = 0
-  b = 1
-  while(count < numTerms)
-  {
-    print(a)
-    temp = a
-    a = b
-    b = temp+b
-    count = count+1
-  }
+  result <- a * b
+  print(result)
 }
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
