@@ -1,0 +1,10 @@
+Package: MyFirstPackage
+Type: Package
+Title: fibonacci
+Version: 0.1.0
+Author: Matt Heffernan
+Maintainer: The package maintainer <yourself@somewhere.net>
+Description: Prints out n fibonacci sequence terms based on the integer input
+License: What license is it under?
+Encoding: UTF-8
+LazyData: true
