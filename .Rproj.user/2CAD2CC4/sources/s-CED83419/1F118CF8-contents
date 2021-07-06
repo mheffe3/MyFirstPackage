@@ -21,3 +21,14 @@ MatrixMultiplier <- function(a,b){
   return(result)
 }
 MatrixMultiplier(M1 <- matrix(c(1,2,3,4), nrow = 2, byrow = TRUE),M2 <- matrix(c(1,2,3,4), nrow = 2, byrow = TRUE))
+
+factorial <- function(x){
+  if(x == 0){
+    return(1)
+  }
+  else
+  {
+    return(x * factorial(x-1))
+  }
+}
+factorial(4)
