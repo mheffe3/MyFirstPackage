@@ -1,14 +1,14 @@
-\name{MatrixMultiplication}
-\alias{MatrixMultiplication}
+\name{MatrixMultiplier}
+\alias{MatrixMultiplier}
 %- Also NEED an '\alias' for EACH other topic documented here.
-\title{MatrixMultiplication
+\title{MatrixMultiplier
 %%  ~~function to do ... ~~
 }
-\description{Multiplies two inputted matrices and prints the product
+\description{Multiplies two inputted matrices and returns their product
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }
 \usage{
-MatrixMultiplication(a,b)
+MatrixMultiplier(a,b)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -20,7 +20,7 @@ MatrixMultiplication(a,b)
 \details{
 %%  ~~ If necessary, more details than the description above ~~
 }
-\value{Return type is void just prints out the product
+\value{Returns the product of the two input matrices (a*b)
 %%  ~Describe the value returned
 %%  If it is a LIST, use
 %%  \item{comp1 }{Description of 'comp1'}
@@ -43,19 +43,18 @@ MatrixMultiplication(a,b)
 %% ~~objects to See Also as \code{\link{help}}, ~~~
 }
 \examples{MatrixMultiplier(M1 <- matrix(c(1,2,3,4), nrow = 2, byrow = TRUE),
-M2 <- matrix(c(1,2,3,4), nrow = 2, byrow = TRUE))
-    [,1] [,2]
-[1,]  1    4
-[2,]  9   16
+                 M2 <- matrix(c(1,2,3,4), nrow = 2, byrow = TRUE))
+Returns the product of these two matrices (ie.    [,1] [,2] )
+                                          (  [1,]    1    4 )
+                                          (  [2,]    9   16 )
 ##---- Should be DIRECTLY executable !! ----
 ##-- ==>  Define data, use random,
 ##--	or do  help(data=index)  for the standard data sets.
 
 ## The function is currently defined as
-MatrixMultiplication(a,b)
-{
+MatrixMultiplier <- function(a,b){
   result <- a * b
-  print(result)
+  return(result)
 }
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the

@@ -4,22 +4,22 @@
 \title{fibonacci
 %%  ~~function to do ... ~~
 }
-\description{Takes in an integer and prints out that number of terms of the fibonacci sequence specified by that number
+\description{Takes in an integer (n) and returns a vector containing the first n terms of the fibonacci sequence
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }
 \usage{
-fibonacci(numTerms)
+fibonacci(n)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
-  \item{numTerms}{Number of Terms of Sequence to be Printed
+  \item{n}{Number of terms of sequence to be returned in the vector
 %%     ~~Describe \code{x} here~~
 }
 }
 \details{
 %%  ~~ If necessary, more details than the description above ~~
 }
-\value{Return type is void just prints out the number of terms of the sequence specified
+\value{Returns a vector containing the first n terms of the sequence specified the input
 %%  ~Describe the value returned
 %%  If it is a LIST, use
 %%  \item{comp1 }{Description of 'comp1'}
@@ -42,32 +42,26 @@ fibonacci(numTerms)
 %% ~~objects to See Also as \code{\link{help}}, ~~~
 }
 \examples{fibonacci(8)
-[1] 0
-[1] 1
-[1] 1
-[1] 2
-[1] 3
-[1] 5
-[1] 8
-[1] 13
+Returns a vector of length 8 containing the first 8 terms of the fibonacci sequence (ie. 0, 1, 1, 2, 3, 5, 8, 13)
 ##---- Should be DIRECTLY executable !! ----
 ##-- ==>  Define data, use random,
 ##--	or do  help(data=index)  for the standard data sets.
 
 ## The function is currently defined as
-fibonacci(numTerms)
-{
-  count = 0
+fibonacci <- function(n){
   a = 0
   b = 1
-  while(count < numTerms)
+  count = 0
+  sequence <- c()
+  while(count < n)
   {
-    print(a)
-    temp = a
-    a = b
-    b = temp+b
-    count = count+1
+    sequence <- append(sequence, a)
+    temp <- a
+    a <- b
+    b <- temp + b
+    count <- count + 1
   }
+  return(sequence)
 }
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
