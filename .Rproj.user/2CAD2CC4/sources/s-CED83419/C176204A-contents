@@ -4,22 +4,22 @@
 \title{fibonacci
 %%  ~~function to do ... ~~
 }
-\description{Takes in a numeric vector integer and prints out that number of terms of the fibonacci sequence
+\description{Takes in an integer and prints out that number of terms of the fibonacci sequence specified by that number
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }
-\usage{Used for printing out the fibonacci sequence
-fibonacci(x)
+\usage{
+fibonacci(numTerms)
 }
 %- maybe also 'usage' for other objects documented here.
-\arguments{numeric vector integer
-  \item{x}{
+\arguments{
+  \item{numTerms}{Number of Terms of Sequence to be Printed
 %%     ~~Describe \code{x} here~~
 }
 }
 \details{
 %%  ~~ If necessary, more details than the description above ~~
 }
-\value{Return type is null just prints out the sequence
+\value{Return type is void just prints out the number of terms of the sequence specified
 %%  ~Describe the value returned
 %%  If it is a LIST, use
 %%  \item{comp1 }{Description of 'comp1'}
@@ -55,8 +55,18 @@ fibonacci(x)
 ##--	or do  help(data=index)  for the standard data sets.
 
 ## The function is currently defined as
-function (x)
+fibonacci(numTerms)
 {
+  count = 0
+  a = 0
+  b = 1
+  while(count < numTerms)
+  {
+    print(a)
+    temp = a
+    a = b
+    b = temp+b
+    count = count+1
   }
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
