@@ -33,6 +33,7 @@ factorial <- function(x){
 }
 factorial(4)
 
+
 sum <- function(a,b){
   result <- 0
   while(a <= b){
@@ -42,3 +43,34 @@ sum <- function(a,b){
   return(result)
 }
 sum(1,5)
+
+
+randomNumberGame <- function(leftbound, rightbound){
+  secretNumber<-sample(leftbound:rightbound, 1)
+  count <- 1
+  cat("Range: ",leftbound,"-",rightbound)
+  guess <- readline("Enter a guess : ");
+  guess <- as.integer(guess)
+
+  while(guess != secretNumber)
+  {
+    if(guess < leftbound || guess > rightbound)
+    {
+      cat("Your guess is outside of the valid range", leftbound,"-",rightbound,". Try Again \n")
+    }
+    else if(guess < secretNumber)
+    {
+      cat("The secret number is greater than your guess\n")
+    }
+    else if(guess > secretNumber)
+    {
+      cat("The secret number is less than your guess\n")
+    }
+
+    count <- count + 1
+    guess <- readline("Enter a guess : ");
+    guess <- as.integer(guess)
+
+  }
+  cat("You got it! The secret number is ", secretNumber,". It took you ",count," guesses")
+}

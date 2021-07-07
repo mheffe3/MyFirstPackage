@@ -1,27 +1,27 @@
 {
-    "id": "5CEDF935",
-    "path": "~/MyFirstPackage/man/sum.Rd",
-    "project_path": "man/sum.Rd",
+    "id": "458F038D",
+    "path": "~/MyFirstPackage/man/randomNumberGame.Rd",
+    "project_path": "man/randomNumberGame.Rd",
     "type": "r_doc",
-    "hash": "0",
+    "hash": "376038854",
     "contents": "",
     "dirty": false,
-    "created": 1625664445465.0,
+    "created": 1625667814929.0,
     "source_on_save": false,
-    "relative_order": 6,
+    "relative_order": 7,
     "properties": {
         "tempName": "Untitled1",
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "31,57",
-        "scrollLine": "12"
+        "cursorPosition": "79,1",
+        "scrollLine": "48"
     },
     "folds": "",
-    "lastKnownWriteTime": 1625664843,
+    "lastKnownWriteTime": 1625668346,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1625664843277,
+    "last_content_update": 1625668346089,
     "read_only": false,
     "read_only_alternatives": []
 }
