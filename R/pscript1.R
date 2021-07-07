@@ -32,3 +32,13 @@ factorial <- function(x){
   }
 }
 factorial(4)
+
+sum <- function(a,b){
+  result <- 0
+  while(a <= b){
+    result <- result + a
+    a <- a + 1
+  }
+  return(result)
+}
+sum(1,5)

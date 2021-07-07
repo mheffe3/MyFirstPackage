@@ -1,25 +1,25 @@
-\name{fibonacci}
-\alias{fibonacci}
+\name{sum}
+\alias{sum}
 %- Also NEED an '\alias' for EACH other topic documented here.
-\title{fibonacci
+\title{sum
 %%  ~~function to do ... ~~
 }
-\description{Takes in a numeric vector integer and prints out that number of terms of the fibonacci sequence
+\description{Takes in two numbers and sums from the first to the last inclusive
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }
-\usage{Used for printing out the fibonacci sequence
-fibonacci(x)
+\usage{
+sum(a,b)
 }
 %- maybe also 'usage' for other objects documented here.
-\arguments{numeric vector integer
-  \item{x}{
+\arguments{
+  \item{a}{The starting number for the summation}
+  \item{b}{The ending number for the summation}
 %%     ~~Describe \code{x} here~~
-}
 }
 \details{
 %%  ~~ If necessary, more details than the description above ~~
 }
-\value{Return type is null just prints out the sequence
+\value{Returns an integer that is the sum of numbers from a to b inclusive
 %%  ~Describe the value returned
 %%  If it is a LIST, use
 %%  \item{comp1 }{Description of 'comp1'}
@@ -41,23 +41,21 @@ fibonacci(x)
 \seealso{
 %% ~~objects to See Also as \code{\link{help}}, ~~~
 }
-\examples{fibonacci(8)
-[1] 0
-[1] 1
-[1] 1
-[1] 2
-[1] 3
-[1] 5
-[1] 8
-[1] 13
+\examples{sum(1,5)
+Returns the sum from 1 to 5 inclusive which is 15
 ##---- Should be DIRECTLY executable !! ----
 ##-- ==>  Define data, use random,
 ##--	or do  help(data=index)  for the standard data sets.
 
 ## The function is currently defined as
-function (x)
-{
+sum <- function(a,b){
+  result <- 0
+  while(a <= b){
+    result <- result + a
+    a <- a + 1
   }
+  return(result)
+}
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory (show via RShowDoc("KEYWORDS")):

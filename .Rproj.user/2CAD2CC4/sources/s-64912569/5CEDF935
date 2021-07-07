@@ -1,27 +1,27 @@
 {
-    "id": "CDE05A45",
-    "path": "~/MyFirstPackage/man/factorial.Rd",
-    "project_path": "man/factorial.Rd",
+    "id": "5CEDF935",
+    "path": "~/MyFirstPackage/man/sum.Rd",
+    "project_path": "man/sum.Rd",
     "type": "r_doc",
-    "hash": "857046464",
+    "hash": "944506176",
     "contents": "",
     "dirty": false,
-    "created": 1625595899240.0,
+    "created": 1625664445465.0,
     "source_on_save": false,
-    "relative_order": 5,
+    "relative_order": 6,
     "properties": {
         "tempName": "Untitled1",
         "source_window_id": "",
         "Source": "Source",
         "cursorPosition": "57,1",
-        "scrollLine": "29"
+        "scrollLine": "36"
     },
     "folds": "",
-    "lastKnownWriteTime": 1625596417,
+    "lastKnownWriteTime": 1625664843,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1625596417654,
+    "last_content_update": 1625664843277,
     "read_only": false,
     "read_only_alternatives": []
 }
