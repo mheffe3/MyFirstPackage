@@ -46,6 +46,11 @@ sum(1,5)
 
 
 randomNumberGame <- function(leftbound, rightbound){
+  if(leftbound > rightbound)
+  {
+    cat("Upper bound should be greater than lower bound\n")
+    return()
+  }
   secretNumber<-sample(leftbound:rightbound, 1)
   count <- 1
   cat("Range: ",leftbound,"-",rightbound)

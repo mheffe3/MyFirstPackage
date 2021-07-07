@@ -50,6 +50,11 @@ Generates a random number between 1 and 10 inclusive and asks for the user to gu
 
 ## The function is currently defined as
 randomNumberGame <- function(leftbound, rightbound){
+  if(leftbound > rightbound)
+  {
+    cat("Upper bound should be greater than lower bound\n")
+    return()
+  }
   secretNumber<-sample(leftbound:rightbound, 1)
   count <- 1
   cat("Range: ",leftbound,"-",rightbound)
