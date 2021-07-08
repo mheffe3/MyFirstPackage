@@ -1,0 +1,27 @@
+{
+    "id": "48E7B0CB",
+    "path": "~/MyFirstPackage/man/writeToFile.Rd",
+    "project_path": "man/writeToFile.Rd",
+    "type": "r_doc",
+    "hash": "3139291497",
+    "contents": "",
+    "dirty": false,
+    "created": 1625761263221.0,
+    "source_on_save": false,
+    "relative_order": 3,
+    "properties": {
+        "tempName": "Untitled1",
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "62,1",
+        "scrollLine": "32"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1625761279,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1625761279961,
+    "read_only": false,
+    "read_only_alternatives": []
+}

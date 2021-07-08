@@ -86,7 +86,6 @@ writeToFile <- function(filename)
 {
   name <- readline("Enter your name : ")
   cat(name, file=filename, sep = "\n",append=TRUE)
-  #print(Sys.time())
   cat(format(Sys.time(),usetz=TRUE), file=filename, sep = "\n", append=TRUE)
   line <- readline("Write something (q to quit) : ")
   while(line != "q")
