@@ -130,5 +130,32 @@ writeToFile <- function(filename)
 #writeToFile("output.txt")
 
 
+arithSeq <- function(d,a1,n)
+{
+  count <- 0
+  sequence <- vector()
+  while(count < n)
+  {
+    sequence <- append(sequence, (a1 + (count)*d))
+    count <- count+1
+  }
+
+  return(sequence)
+
+}
+
+geoSeq <- function(r,a1,n)
+{
+  count <- 0
+  sequence <- vector()
+  while(count < n)
+  {
+    sequence <- append(sequence, (a1 * r^(count)))
+    count <- count+1
+  }
+
+  return(sequence)
+
+}
 
 
