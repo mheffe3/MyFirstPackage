@@ -1,0 +1,27 @@
+{
+    "id": "D9DD3206",
+    "path": "~/MyFirstPackage/man/geoSeq.Rd",
+    "project_path": "man/geoSeq.Rd",
+    "type": "r_doc",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1625770607907.0,
+    "source_on_save": false,
+    "relative_order": 3,
+    "properties": {
+        "tempName": "Untitled1",
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "6,160",
+        "scrollLine": "0"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1625770640,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1625770640734,
+    "read_only": false,
+    "read_only_alternatives": []
+}

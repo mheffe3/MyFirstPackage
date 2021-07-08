@@ -159,3 +159,5 @@ geoSeq <- function(r,a1,n)
 }
 
 
+
+
