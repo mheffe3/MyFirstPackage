@@ -34,15 +34,19 @@ factorial <- function(x){
 factorial(4)
 
 
-sum <- function(a,b){
-  result <- 0
-  while(a <= b){
-    result <- result + a
-    a <- a + 1
+sum <- function(a,b,by){
+  if(a == b)
+  {
+    return(0)
   }
+  while((b-a)%%by != 0)
+  {
+    b <- b - 1
+  }
+  result <- (((((b-a)/by)+1)*(a+b))/2)
   return(result)
 }
-sum(1,5)
+sum(1,5,1)
 
 
 randomNumberGame <- function(leftbound, rightbound){

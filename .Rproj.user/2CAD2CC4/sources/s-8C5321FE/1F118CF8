@@ -3,7 +3,7 @@
     "path": "~/MyFirstPackage/R/pscript1.R",
     "project_path": "R/pscript1.R",
     "type": "r_source",
-    "hash": "1691481161",
+    "hash": "0",
     "contents": "",
     "dirty": false,
     "created": 1625248364819.0,
@@ -12,15 +12,15 @@
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "160,0",
-        "scrollLine": "130"
+        "cursorPosition": "47,1",
+        "scrollLine": "24"
     },
     "folds": "",
-    "lastKnownWriteTime": 1625770676,
+    "lastKnownWriteTime": 1625774112,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1625770676571,
+    "last_content_update": 1625774112472,
     "read_only": false,
     "read_only_alternatives": []
 }
