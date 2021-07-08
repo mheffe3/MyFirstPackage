@@ -82,16 +82,16 @@ randomNumberGame <- function(leftbound, rightbound){
 #randomNumberGame(1,10)
 
 
-writeToFile <- function()
+writeToFile <- function(filename)
 {
   name <- readline("Enter your name : ")
-  cat(name, file="output.txt", sep = "\n",append=TRUE)
+  cat(name, file=filename, sep = "\n",append=TRUE)
   #print(Sys.time())
-  cat(format(Sys.time(),usetz=TRUE), file="output.txt", sep = "\n", append=TRUE)
+  cat(format(Sys.time(),usetz=TRUE), file=filename, sep = "\n", append=TRUE)
   line <- readline("Write something (q to quit) : ")
   while(line != "q")
   {
-    cat(line, file="output.txt", sep = "\n", append=TRUE)
+    cat(line, file=filename, sep = "\n", append=TRUE)
     line <- readline("Write more (q to quit) : ")
   }
 
