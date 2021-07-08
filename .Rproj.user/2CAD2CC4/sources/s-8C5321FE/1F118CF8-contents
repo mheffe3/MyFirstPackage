@@ -84,18 +84,50 @@ randomNumberGame <- function(leftbound, rightbound){
 
 writeToFile <- function(filename)
 {
+
+  if(file.exists(filename))
+  {
+    answer <- readline("FILE ALREADY EXISTS. Would you like to 'a' (append), 'o' (overwrite), or 'q' (quit) : ")
+    if(answer != 'a' && answer !='o')
+    {
+      return(cat("QUITTING"))
+    }
+    else if(answer == 'o')
+    {
+      a = FALSE
+    }
+    else
+    {
+      a = TRUE
+    }
+  }
+  else
+  {
+    answer <- readline("NEW FILE NAME.  Do you wish to create a new file 'y' (yes) or 'n' (no) : ")
+    if(answer != 'y')
+    {
+      return(cat("QUITTING"))
+    }
+    else
+    {
+      cat("NEW FILE CREATED: ", filename, "\n")
+      a = TRUE
+    }
+  }
   name <- readline("Enter your name : ")
-  cat(name, file=filename, sep = "\n",append=TRUE)
+  cat(name, file=filename, sep = "\n",append=a)
   cat(format(Sys.time(),usetz=TRUE), file=filename, sep = "\n", append=TRUE)
-  line <- readline("Write something (q to quit) : ")
+  line <- readline("Write something ('q' to quit) : ")
   while(line != "q")
   {
     cat(line, file=filename, sep = "\n", append=TRUE)
-    line <- readline("Write more (q to quit) : ")
+    line <- readline("Write more ('q' to quit) : ")
   }
 
+  return(cat("DONE"))
+
 }
-#writeToFile()
+#writeToFile("output.txt")
 
 
 
