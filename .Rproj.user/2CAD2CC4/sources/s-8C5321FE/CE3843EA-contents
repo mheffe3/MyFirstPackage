@@ -1,14 +1,14 @@
-\name{MatrixMultiplier}
-\alias{MatrixMultiplier}
+\name{matrixMultiplier}
+\alias{matrixMultiplier}
 %- Also NEED an '\alias' for EACH other topic documented here.
-\title{MatrixMultiplier
+\title{matrixMultiplier
 %%  ~~function to do ... ~~
 }
 \description{Multiplies two inputted matrices and returns their product
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }
 \usage{
-MatrixMultiplier(a,b)
+matrixMultiplier(a,b)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -42,7 +42,7 @@ MatrixMultiplier(a,b)
 \seealso{
 %% ~~objects to See Also as \code{\link{help}}, ~~~
 }
-\examples{MatrixMultiplier(M1 <- matrix(c(1,2,3,4), nrow = 2, byrow = TRUE),
+\examples{matrixMultiplier(M1 <- matrix(c(1,2,3,4), nrow = 2, byrow = TRUE),
                  M2 <- matrix(c(1,2,3,4), nrow = 2, byrow = TRUE))
 Returns the product of these two matrices (ie.    [,1] [,2] )
                                           (  [1,]    1    4 )
@@ -52,7 +52,7 @@ Returns the product of these two matrices (ie.    [,1] [,2] )
 ##--	or do  help(data=index)  for the standard data sets.
 
 ## The function is currently defined as
-MatrixMultiplier <- function(a,b){
+matrixMultiplier <- function(a,b){
   result <- a * b
   return(result)
 }

@@ -1,26 +1,26 @@
 {
-    "id": "1F118CF8",
-    "path": "~/MyFirstPackage/R/pscript1.R",
-    "project_path": "R/pscript1.R",
+    "id": "EEA0E623",
+    "path": "~/Internship2021/RCode/script1.R",
+    "project_path": null,
     "type": "r_source",
     "hash": "0",
     "contents": "",
     "dirty": false,
-    "created": 1625248364819.0,
+    "created": 1625581063410.0,
     "source_on_save": false,
     "relative_order": 2,
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "52,3",
-        "scrollLine": "38"
+        "cursorPosition": "1166,1",
+        "scrollLine": "1143"
     },
     "folds": "",
-    "lastKnownWriteTime": 1625668863,
+    "lastKnownWriteTime": 1625759114,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1625668863714,
+    "last_content_update": 1625759114363,
     "read_only": false,
     "read_only_alternatives": []
 }

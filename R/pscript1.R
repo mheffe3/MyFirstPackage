@@ -16,11 +16,11 @@ fibonacci <- function(n){
 fibonacci(8)
 
 
-MatrixMultiplier <- function(a,b){
+matrixMultiplier <- function(a,b){
   result <- a * b
   return(result)
 }
-MatrixMultiplier(M1 <- matrix(c(1,2,3,4), nrow = 2, byrow = TRUE),M2 <- matrix(c(1,2,3,4), nrow = 2, byrow = TRUE))
+matrixMultiplier(M1 <- matrix(c(1,2,3,4), nrow = 2, byrow = TRUE),M2 <- matrix(c(1,2,3,4), nrow = 2, byrow = TRUE))
 
 factorial <- function(x){
   if(x == 0){
@@ -79,3 +79,24 @@ randomNumberGame <- function(leftbound, rightbound){
   }
   cat("You got it! The secret number is ", secretNumber,". It took you ",count," guesses")
 }
+#randomNumberGame(1,10)
+
+
+writeToFile <- function()
+{
+  name <- readline("Enter your name : ")
+  cat(name, file="output.txt", sep = "\n",append=TRUE)
+  #print(Sys.time())
+  cat(format(Sys.time(),usetz=TRUE), file="output.txt", sep = "\n", append=TRUE)
+  line <- readline("Write something (q to quit) : ")
+  while(line != "q")
+  {
+    cat(line, file="output.txt", sep = "\n", append=TRUE)
+    line <- readline("Write more (q to quit) : ")
+  }
+
+}
+#writeToFile()
+
+
+

@@ -1,25 +1,25 @@
-\name{sum}
-\alias{sum}
+\name{writeToFile}
+\alias{writeToFile}
 %- Also NEED an '\alias' for EACH other topic documented here.
-\title{sum
+\title{writeToFile
 %%  ~~function to do ... ~~
 }
-\description{Takes in two numbers and sums from the first to the last inclusive
+\description{Asks for user's name and opens a file writing the name entered and the Sys.time.  Then asks for user to type more or enter 'q' to quit.
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }
 \usage{
-sum(a,b)
+writeToFile()
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
-  \item{a}{The starting number for the summation}
-  \item{b}{The ending number for the summation}
+  \item{}{
 %%     ~~Describe \code{x} here~~
+}
 }
 \details{
 %%  ~~ If necessary, more details than the description above ~~
 }
-\value{Returns an integer that is the sum of numbers from a to b inclusive
+\value{No return type creates a txt file in the current project called "output.txt"
 %%  ~Describe the value returned
 %%  If it is a LIST, use
 %%  \item{comp1 }{Description of 'comp1'}
@@ -41,20 +41,26 @@ sum(a,b)
 \seealso{
 %% ~~objects to See Also as \code{\link{help}}, ~~~
 }
-\examples{sum(1,5)
-Returns the sum from 1 to 5 inclusive which is 15
+\examples{writeToFile()
+Allows user to write to a file.
 ##---- Should be DIRECTLY executable !! ----
 ##-- ==>  Define data, use random,
 ##--	or do  help(data=index)  for the standard data sets.
 
 ## The function is currently defined as
-sum <- function(a,b){
-  result <- 0
-  while(a <= b){
-    result <- result + a
-    a <- a + 1
+writeToFile <- function()
+{
+  name <- readline("Enter your name : ")
+  cat(name, file="output.txt", sep = "\n",append=TRUE)
+  #print(Sys.time())
+  cat(format(Sys.time(),usetz=TRUE), file="output.txt", sep = "\n", append=TRUE)
+  line <- readline("Write something (q to quit) : ")
+  while(line != "q")
+  {
+    cat(line, file="output.txt", sep = "\n", append=TRUE)
+    line <- readline("Write more (q to quit) : ")
   }
-  return(result)
+
 }
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the

@@ -1,25 +1,25 @@
-\name{fibonacci}
-\alias{fibonacci}
+\name{writeToFile}
+\alias{writeToFile}
 %- Also NEED an '\alias' for EACH other topic documented here.
-\title{fibonacci
+\title{writeToFile
 %%  ~~function to do ... ~~
 }
-\description{Takes in an integer (n) and returns a vector containing the first n terms of the fibonacci sequence
+\description{Asks for user's name and opens a file writing the name entered and the Sys.time.  Then asks for user to type more or enter 'q' to quit.
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }
 \usage{
-fibonacci(n)
+writeToFile()
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
-  \item{n}{Number of terms of sequence to be returned in the vector
+  \item{}{
 %%     ~~Describe \code{x} here~~
 }
 }
 \details{
 %%  ~~ If necessary, more details than the description above ~~
 }
-\value{Returns a vector containing the first n terms of the sequence specified by the input
+\value{No return type creates a txt file in the current project called "output.txt"
 %%  ~Describe the value returned
 %%  If it is a LIST, use
 %%  \item{comp1 }{Description of 'comp1'}
@@ -41,27 +41,26 @@ fibonacci(n)
 \seealso{
 %% ~~objects to See Also as \code{\link{help}}, ~~~
 }
-\examples{fibonacci(8)
-Returns a vector of length 8 containing the first 8 terms of the fibonacci sequence (ie. 0, 1, 1, 2, 3, 5, 8, 13)
+\examples{writeToFile()
+Allows user to write to a file.
 ##---- Should be DIRECTLY executable !! ----
 ##-- ==>  Define data, use random,
 ##--	or do  help(data=index)  for the standard data sets.
 
 ## The function is currently defined as
-fibonacci <- function(n){
-  a = 0
-  b = 1
-  count = 0
-  sequence <- c()
-  while(count < n)
+writeToFile <- function()
+{
+  name <- readline("Enter your name : ")
+  cat(name, file="output.txt", sep = "\n",append=TRUE)
+  #print(Sys.time())
+  cat(format(Sys.time(),usetz=TRUE), file="output.txt", sep = "\n", append=TRUE)
+  line <- readline("Write something (q to quit) : ")
+  while(line != "q")
   {
-    sequence <- append(sequence, a)
-    temp <- a
-    a <- b
-    b <- temp + b
-    count <- count + 1
+    cat(line, file="output.txt", sep = "\n", append=TRUE)
+    line <- readline("Write more (q to quit) : ")
   }
-  return(sequence)
+
 }
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
