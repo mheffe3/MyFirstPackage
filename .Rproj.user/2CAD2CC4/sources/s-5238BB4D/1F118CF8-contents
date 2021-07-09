@@ -34,7 +34,7 @@ factorial <- function(x){
 factorial(4)
 
 
-sum <- function(a,b,by){
+sum <- function(a,b,by=1){
   if(a == b)
   {
     return(0)
@@ -46,7 +46,7 @@ sum <- function(a,b,by){
   result <- (((((b-a)/by)+1)*(a+b))/2)
   return(result)
 }
-sum(1,5,1)
+sum(1,5)
 
 
 randomNumberGame <- function(leftbound, rightbound){
@@ -161,7 +161,6 @@ geoSeq <- function(r,a1,n)
   return(sequence)
 
 }
-
 
 
 
